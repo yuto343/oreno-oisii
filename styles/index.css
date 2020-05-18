@@ -14,5 +14,17 @@
   color: #333;
   line-height: 1.15;
 }
+.pj-border-bottom {
+  border-bottom: 1px solid #a4a4a4;
+}
+.pj-border-top {
+  border-top: 1px solid #a4a4a4;
+}
+.pj-category-border-color {
+  border-color: #a4a4a4;
+}
+.pj-background-color {
+  background-color: #fff8ee;
+}
 
 @tailwind utilities;
