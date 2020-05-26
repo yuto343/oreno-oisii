@@ -33,7 +33,7 @@ export default function Nav() {
           <TwemojiElement className="mx-auto my-3" emoji="🍽" />
         </div>
       </div>
-      <ul className="flex py-3 pj-border-bottom">
+      <ul className="flex py-3 pj-border-bottom justify-center">
         {categories.map((category, idx) => {
           return (
             <li

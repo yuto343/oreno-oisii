@@ -27,4 +27,8 @@
   background-color: #fff8ee;
 }
 
+html {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #252525;
+}
 @tailwind utilities;
