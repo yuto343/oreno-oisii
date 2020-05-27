@@ -1,14 +1,14 @@
 import React from "react";
 
-function ImageContainer({ imageUrl }) {
+function ImageContainer({ imageName, imageDir }) {
   return (
     <div className="relative">
       <img
         className="rounded-md"
-        src={require(`../../public/images/${imageUrl}?trace`).trace}
+        src={require(`../../posts/${imageDir}/${imageName}?trace`).trace}
       />
       <img
-        src={require(`../../public/images/${imageUrl}?webp`)}
+        src={require(`../../posts/${imageDir}/${imageName}?webp`)}
         className="z-1 block absolute top-0 right-0 rounded-md"
       />
     </div>
