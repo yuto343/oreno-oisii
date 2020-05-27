@@ -1,10 +1,21 @@
 import Layout from "../layout/Layout";
-import ImageContainer from "../components/elements/ImageContainer";
-export default function IndexPage() {
+import { getSortedPostsData } from "../lib/posts";
+import PostCard from "../components/PostCard";
+export default function IndexPage({ allPostsData }) {
   return (
     <Layout>
       <ul className="mt-3">
-        <li className="bg-white rounded-md pj-category-border-color border shadow w-11/12 mx-auto">
+        {allPostsData.map((post, idx) => {
+          return (
+            <PostCard
+              key={idx}
+              postTitle={post.title}
+              postImageUrl={post.thumbnail}
+              postImageDir={post.id}
+            />
+          );
+        })}
+        {/* <li className="bg-white rounded-md pj-category-border-color border shadow w-11/12 mx-auto">
           <div className="flex p-2">
             <div className="w-1/3">
               <ImageContainer imageUrl="pictures/test.jpeg" />
@@ -14,8 +25,24 @@ export default function IndexPage() {
             </h2>
           </div>
           <div></div>
-        </li>
+        </li> */}
       </ul>
     </Layout>
   );
 }
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+// export async function getStaticProps() {
+//   const allPostsData = getFilteredPostsData("chicken");
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// }
