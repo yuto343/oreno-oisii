@@ -1,31 +1,8 @@
 import Link from "next/link";
 import TwemojiElement from "./elements/TwemojiElement";
+import { categories } from "../constants/categories";
 
-const links = [
-  { href: "https://github.com/zeit/next.js", label: "GitHub" },
-  { href: "https://nextjs.org/docs", label: "Docs" },
-];
-
-export default function Nav() {
-  const categories = [
-    {
-      name: "pork",
-      emoji: "🐖",
-    },
-    {
-      name: "beef",
-      emoji: "🐂",
-    },
-    {
-      name: "chiken",
-      emoji: "🐓",
-    },
-    {
-      name: "other",
-      emoji: "🍳",
-    },
-  ];
-
+export default function Nav({ params }) {
   return (
     <nav className="bg-white">
       <div className="pj-border-bottom shadow">
@@ -35,12 +12,22 @@ export default function Nav() {
       </div>
       <ul className="flex py-3 pj-border-bottom justify-center">
         {categories.map((category, idx) => {
+          const liClass =
+            category.name === params
+              ? "relative w-16 h-16 block pj-category-active flex justify-center items-center"
+              : "relative w-16 h-16 block  flex justify-center items-center";
           return (
-            <li
-              className="w-16 border p-3 pj-category-border-color rounded-full mx-1 "
-              key={idx}
-            >
-              <TwemojiElement emoji={category.emoji} />
+            <li key={idx} className="mx-1">
+              <Link
+                href="/category/[category]"
+                as={`/category/${category.name}`}
+              >
+                <a className={liClass}>
+                  <div className="p-3 bg-pink-200 rounded-full z-10 relative w-11/12 border-1 border-white ">
+                    <TwemojiElement emoji={category.emoji} />
+                  </div>
+                </a>
+              </Link>
             </li>
           );
         })}

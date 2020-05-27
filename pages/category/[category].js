@@ -3,10 +3,11 @@ import { getFilteredPostsData } from "../../lib/posts";
 import { getAllCategoryNames } from "../../lib/categories";
 import Layout from "../../layout/Layout";
 import PostCard from "../../components/PostCard";
-function category({ filteredData }) {
+function category({ filteredData, params }) {
   console.log(filteredData);
+
   return (
-    <Layout>
+    <Layout params={params.category}>
       <ul className="mt-3">
         {filteredData.map((post, idx) => {
           return (
@@ -43,11 +44,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  console.log(params);
   const filteredData = getFilteredPostsData(params.category);
   return {
     props: {
       filteredData,
+      params,
     },
   };
 }

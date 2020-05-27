@@ -27,6 +27,23 @@
   background-color: #fff8ee;
 }
 
+.pj-category-active {
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #ef32d9, #89fffd);
+  animation: 3s linear infinite rotation1;
+}
+.pj-category-active > div {
+  animation: 3s linear infinite rotation1;
+  animation-direction: reverse;
+}
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   font-family: "M PLUS Rounded 1c", sans-serif;
   color: #252525;

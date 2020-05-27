@@ -1,8 +1,8 @@
 import Nav from "../components/Nav";
-export default function Layout({ children }) {
+export default function Layout({ children, params }) {
   return (
     <div className="min-h-screen pj-background-color">
-      <Nav />
+      <Nav params={params} />
       <div className="w-full">{children}</div>
     </div>
   );
