@@ -17,32 +17,6 @@ class MyDocument extends Document {
             as="font"
             crossOrigin=""
           />
-          {/* 
-          とりあえずwoffだけでいいのでコメントアウト
-          <link
-            rel="preload"
-            href="/fonts/m-plus-rounded-1c-v10-latin_japanese-regular.woff2"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/fonts/m-plus-rounded-1c-v10-latin_japanese-regular.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/fonts/m-plus-rounded-1c-v10-latin_japanese-regular.svg"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
-            href="/fonts/m-plus-rounded-1c-v10-latin_japanese-regular.eot"
-            as="font"
-            crossOrigin=""
-          /> */}
         </Head>
         <body>
           <Main />

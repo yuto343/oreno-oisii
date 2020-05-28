@@ -4,7 +4,7 @@ import { getAllCategoryNames } from "../../lib/categories";
 import Layout from "../../layout/Layout";
 import PostCard from "../../components/PostCard";
 function category({ filteredData, params }) {
-  console.log(filteredData);
+  // console.log(filteredData);
 
   return (
     <Layout params={params.category}>

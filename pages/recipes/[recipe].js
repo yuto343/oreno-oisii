@@ -6,8 +6,8 @@ import ImageContainer from "../../components/elements/ImageContainer";
 import TwemojiElement from "../../components/elements/TwemojiElement";
 
 function recipe({ postData, params }) {
-  console.log(postData);
-  console.log(params);
+  //   console.log(postData);
+  //   console.log(params);
   return (
     <Layout params={postData.category}>
       <ImageContainer imageName={postData.thumbnail} imageDir={params.recipe} />
