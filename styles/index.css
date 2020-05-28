@@ -25,6 +25,7 @@
 }
 .pj-background-color {
   background-color: #fff8ee;
+  min-height: 100vh;
 }
 
 .pj-category-active {
