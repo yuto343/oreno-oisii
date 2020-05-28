@@ -8,6 +8,10 @@ module.exports = withOptimizedImages({
   },
   webp: {
     autoFilter: true,
+    resize: {
+      width: 504,
+      height: 378,
+    },
   },
   webpack(config) {
     config.resolve.alias.images = path.join(__dirname, "images");
