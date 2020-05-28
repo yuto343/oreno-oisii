@@ -11,7 +11,7 @@ function recipe({ postData, params }) {
   return (
     <Layout params={postData.category}>
       <ImageContainer imageName={postData.thumbnail} imageDir={params.recipe} />
-      <div className="px-3">
+      <div className="px-3 md:w-3/4 md:mx-auto">
         <div className="justify-end items-center mt-3  flex">
           <div className="w-6">
             <TwemojiElement emoji="📝" />
@@ -19,7 +19,7 @@ function recipe({ postData, params }) {
           <div>{postData.date}</div>
         </div>
         <h1 className="text-xl mt-3">{postData.title}</h1>
-        <div className="mt-3 pb-10">
+        <div className="mt-3 pb-10 pj-recipe-content">
           <ReactMarkDown source={postData.content} />
         </div>
       </div>

@@ -1,13 +1,36 @@
 ---
-title: "サーモンのムニエル"
-date: "2020-01-01"
-category: "fish"
-thumbnail: "test.jpeg"
+title: "チキンのオニオンソース"
+date: "2020-05-18"
+category: "chicken"
+thumbnail: "chicken-onion-source.jpeg"
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+- 玉ねぎ小さかったら半分くらい、大きかったら 1/4
+- 秘伝のたれ 100cc
+- 砂糖　大さじ 1
+- 鶏肉　お腹いっぱいになる量
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+## 鶏肉に塩胡椒をする。
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+皮には小麦粉を打つとグッド
+
+## 玉ねぎと秘伝のたれ、砂糖をミキサーにかけてドロドロのタレにする。
+
+おろし金とかあったら玉ねぎをすりおろすでも可
+
+## 鶏肉を焼く
+
+皮目から強火で焼いて、こんがりしてきたらひっくり返して弱火にして蓋をする。
+
+### チーズとソースをかける
+
+３分ぐらいたったらソースをかけてさらに煮込む。
+
+その後１分くらいたったらチーズを乗せる。
+
+チーズがいい感字に溶けたらさらに盛り付ける。
+
+## 盛り付け
+
+チーズがいい感じに溶けたらさらに盛り付ける。
+たれはまだあまりドロッとしていないことが多いので強火にしてタレだけ煮込み、いい感じになったら上からかける。
