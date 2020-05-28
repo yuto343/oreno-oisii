@@ -23,7 +23,7 @@ export default function Nav({ params }) {
                 as={`/category/${category.name}`}
               >
                 <a className={liClass}>
-                  <div className="p-3 bg-pink-200 rounded-full z-10 relative w-11/12 border-1 border-white ">
+                  <div className="p-3 bg-orange-300 rounded-full z-10 relative w-11/12 border-1 border-white ">
                     <TwemojiElement emoji={category.emoji} />
                   </div>
                 </a>
