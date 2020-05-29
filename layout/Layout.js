@@ -22,7 +22,10 @@ export default function Layout({ children, params, title, image }) {
           content="これは僕が飲食店を経営している両親から教えてもらったレシピを記録し、知見をアップデートておくためのサイトです。"
         />
         <meta property="og:url" content="https://oreno-oisii.tokyo" />
-        <meta property="og:image" content={image ? image : "/images/ogp.png"} />
+        <meta
+          property="og:image"
+          content={image ? image : "https://oreno-oisii.tokyo/images/ogp.png"}
+        />
         <meta property="og:site_name" content="oreno-oisii.com" />
         <meta property="og:locale" content="ja_JP" />
         {/* -- ▼Twitter Cardsの設定--*/}
