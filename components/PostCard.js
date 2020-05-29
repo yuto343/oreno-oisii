@@ -8,13 +8,13 @@ function PostCard({ postTitle, postImageUrl, postImageDir }) {
       <Link href="/recipes/[recipe]" as={`/recipes/${postImageDir}`}>
         <a>
           <div className="flex p-2">
-            <div className="w-1/3">
+            <div className="w-1/3 md:w-auto">
               <ImageContainer
                 imageName={postImageUrl}
                 imageDir={postImageDir}
               />
             </div>
-            <h2 className="px-2 w-2/3">{postTitle}</h2>
+            <h2 className="px-2 w-2/3 md:px-2">{postTitle}</h2>
           </div>
         </a>
       </Link>
