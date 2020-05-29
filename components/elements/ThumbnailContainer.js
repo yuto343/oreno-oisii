@@ -14,9 +14,9 @@ function ThumbnailContainer({ imageName, imageDir }) {
       /> */}
       <Image
         cloudName="dceadmun7"
-        className="block w-full rounded-md md:w-1/2 "
+        className="block rounded-md  "
         publicId={imageDir}
-        width="400"
+        width="800"
         crop="fill"
         format="jpeg"
         gravity="auto"
