@@ -1,9 +1,9 @@
 import React from "react";
 import { Image } from "cloudinary-react";
 
-function ImageContainer({ imageName, imageDir }) {
+function ThumbnailContainer({ imageName, imageDir }) {
   return (
-    <div className="relative">
+    <div className="relative md:flex md:items-center md:justify-center md:py-20 bg-orange-300">
       {/* <img
         className="rounded-md"
         src={require(`../../posts/${imageDir}/${imageName}?trace`).trace}
@@ -14,10 +14,9 @@ function ImageContainer({ imageName, imageDir }) {
       /> */}
       <Image
         cloudName="dceadmun7"
-        className="z-1 block  rounded-md"
+        className="block w-full rounded-md md:w-1/2 "
         publicId={imageDir}
-        width="150"
-        height="150"
+        width="400"
         crop="fill"
         format="webp"
         gravity="auto"
@@ -26,4 +25,4 @@ function ImageContainer({ imageName, imageDir }) {
   );
 }
 
-export default ImageContainer;
+export default ThumbnailContainer;

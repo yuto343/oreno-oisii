@@ -2,7 +2,7 @@ import React from "react";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import ReactMarkDown from "react-markdown";
 import Layout from "../../layout/Layout";
-import ImageContainer from "../../components/elements/ImageContainer";
+import ThumbnailContainer from "../../components/elements/ThumbnailContainer";
 import TwemojiElement from "../../components/elements/TwemojiElement";
 
 function recipe({ postData, params }) {
@@ -10,7 +10,10 @@ function recipe({ postData, params }) {
   //   console.log(params);
   return (
     <Layout params={postData.category}>
-      <ImageContainer imageName={postData.thumbnail} imageDir={params.recipe} />
+      <ThumbnailContainer
+        imageName={postData.thumbnail}
+        imageDir={params.recipe}
+      />
       <div className="px-3 md:w-3/4 md:mx-auto">
         <div className="justify-end items-center mt-3  flex">
           <div className="w-6">
