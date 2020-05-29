@@ -1,6 +1,6 @@
 ---
 title: "フレンチトースト"
-date: "2020-06-29"
+date: "2020-05-29"
 category: "misc"
 thumbnail: "french-toast.jpeg"
 ---
