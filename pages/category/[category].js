@@ -7,7 +7,7 @@ function category({ filteredData, params }) {
   // console.log(filteredData);
 
   return (
-    <Layout params={params.category}>
+    <Layout params={params.category} title={params.category}>
       <ul className="mt-3 md:w-3/4 lg:w-1/2 md:mx-auto">
         {filteredData.map((post, idx) => {
           return (

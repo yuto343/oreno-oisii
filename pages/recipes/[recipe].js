@@ -9,7 +9,7 @@ function recipe({ postData, params }) {
   //   console.log(postData);
   //   console.log(params);
   return (
-    <Layout params={postData.category}>
+    <Layout params={postData.category} title={params.recipe}>
       <ThumbnailContainer
         imageName={postData.thumbnail}
         imageDir={params.recipe}

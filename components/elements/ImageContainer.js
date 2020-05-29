@@ -21,6 +21,7 @@ function ImageContainer({ imageName, imageDir }) {
         crop="fill"
         format="jpeg"
         gravity="auto"
+        alt={imageDir}
       />
     </div>
   );
