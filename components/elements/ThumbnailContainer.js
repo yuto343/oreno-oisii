@@ -18,7 +18,7 @@ function ThumbnailContainer({ imageName, imageDir }) {
         publicId={imageDir}
         width="400"
         crop="fill"
-        format="webp"
+        format="jpeg"
         gravity="auto"
       />
     </div>

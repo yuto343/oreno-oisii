@@ -19,7 +19,7 @@ function ImageContainer({ imageName, imageDir }) {
         width="150"
         height="150"
         crop="fill"
-        format="webp"
+        format="jpeg"
         gravity="auto"
       />
     </div>
