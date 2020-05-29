@@ -12,10 +12,8 @@ class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <link
-            rel="preload"
-            href="/fonts/m-plus-rounded-1c-v10-latin_japanese-regular.woff"
-            as="font"
-            crossOrigin=""
+            href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
+            rel="stylesheet"
           />
         </Head>
         <body>
