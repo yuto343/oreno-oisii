@@ -19,7 +19,7 @@ export default function Layout({ children, params, title, image }) {
         />
         <meta
           property="og:description"
-          content="これは僕が飲食店を経営している両親から教えてもらったレシピを記録し、知見をアップデートておくためのサイトです。"
+          content="これは僕が飲食店を経営している両親から教えてもらったレシピを記録し、知見をアップデートしていくためのサイトです。"
         />
         <meta property="og:url" content="https://oreno-oisii.tokyo" />
         <meta
