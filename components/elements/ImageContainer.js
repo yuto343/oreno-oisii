@@ -22,6 +22,7 @@ function ImageContainer({ imageName, imageDir }) {
         format="jpeg"
         gravity="auto"
         alt={imageDir}
+        secure="true"
       />
     </div>
   );
