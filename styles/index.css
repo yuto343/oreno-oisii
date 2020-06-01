@@ -27,6 +27,13 @@
   background-color: #fff8ee;
   min-height: 100vh;
 }
+.pj-bg-skillbar {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 173, 1) 0%,
+    rgba(0, 136, 255, 1) 100%
+  );
+}
 
 .pj-category-active {
   border-radius: 50%;

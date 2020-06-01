@@ -16,6 +16,7 @@ function category({ filteredData, params }) {
               postTitle={post.title}
               postImageUrl={post.thumbnail}
               postImageDir={post.id}
+              skillLevel={post.level}
             />
           );
         })}

@@ -12,6 +12,7 @@ export default function IndexPage({ allPostsData }) {
               postTitle={post.title}
               postImageUrl={post.thumbnail}
               postImageDir={post.id}
+              skillLevel={post.level}
             />
           );
         })}

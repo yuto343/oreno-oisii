@@ -3,6 +3,8 @@ title: "チキンのオニオンソース"
 date: "2020-05-28"
 category: "chicken"
 thumbnail: "chicken-onion-source.jpeg"
+modified: ""
+level: 3
 ---
 
 - 玉ねぎ小さかったら半分くらい、大きかったら 1/4

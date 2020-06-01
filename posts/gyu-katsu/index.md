@@ -3,6 +3,7 @@ title: "牛カツ"
 date: "2020-05-30"
 category: "beef"
 thumbnail: ""
+level: 1
 ---
 
 - うまい牛肉（いつも焼肉で食べる量の 8 割ぐらいでいい）

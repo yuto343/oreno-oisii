@@ -4,10 +4,12 @@ import ReactMarkDown from "react-markdown";
 import Layout from "../../layout/Layout";
 import ThumbnailContainer from "../../components/elements/ThumbnailContainer";
 import TwemojiElement from "../../components/elements/TwemojiElement";
+import SkillBar from "../../components/SkillBar";
 
 function recipe({ postData, params }) {
   //   console.log(postData);
   //   console.log(params);
+
   return (
     <Layout params={postData.category} title={params.recipe}>
       <ThumbnailContainer
@@ -20,7 +22,17 @@ function recipe({ postData, params }) {
             <TwemojiElement emoji="📝" />
           </div>
           <div>{postData.date}</div>
+          {postData.modified && (
+            <div className="flex">
+              <div className="w-6 ml-3">
+                <TwemojiElement emoji="🛠" />
+              </div>
+              <div>{postData.modified}</div>
+            </div>
+          )}
         </div>
+        <p>熟練度</p>
+        <SkillBar skillLevel={postData.level} />
         <h1 className="text-xl mt-3">{postData.title}</h1>
         <div className="mt-3 pb-10 pj-recipe-content">
           <ReactMarkDown source={postData.content} />

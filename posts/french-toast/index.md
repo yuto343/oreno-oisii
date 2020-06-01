@@ -3,6 +3,8 @@ title: "フレンチトースト"
 date: "2020-05-29"
 category: "misc"
 thumbnail: "french-toast.jpeg"
+modified: "2020-06-01"
+level: 4
 ---
 
 - パン（超熟がうまい）
