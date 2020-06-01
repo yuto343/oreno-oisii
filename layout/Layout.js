@@ -34,7 +34,7 @@ export default function Layout({ children, params, title, image }) {
         <link rel="icon" href="/images/favicon.png" type="image/png" />
       </Head>
       <Nav params={params} />
-      <div className="w-full">{children}</div>
+      <div className="w-full pb-10">{children}</div>
     </div>
   );
 }
