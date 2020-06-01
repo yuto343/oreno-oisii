@@ -61,10 +61,14 @@ html {
   @apply text-lg font-bold py-2 mt-6 mb-3 pl-1 border-orange-500 border-l-4;
 }
 .pj-recipe-content h3 {
-  @apply text-lg font-bold py-1 mt-3 mb-1 pl-1 border-orange-500 border-l-2 mx-2;
+  @apply text-lg font-bold py-1 mt-3 pl-1 border-orange-500  mx-2;
+}
+.pj-recipe-content h3::before {
+  @apply w-3 h-3 bg-orange-500 inline-block mr-2;
+  content: "";
 }
 .pj-recipe-content p {
-  @apply px-2 mx-auto my-4;
+  @apply px-2 mx-auto my-2;
 }
 .pj-recipe-content ul {
   @apply bg-white px-2  py-4 rounded-lg text-sm my-4;
